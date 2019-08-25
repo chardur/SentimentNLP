@@ -2,6 +2,8 @@
 This project does real-time, client side, sentiment analysis using the text input by the user. Words are weighted using the [AFINN 165 values](https://github.com/fnielsen/afinn/tree/master/afinn/data).It was built with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2. It uses [compromise NLP](https://github.com/spencermountain/compromise#readme).
 <img src="/sentiment.jpg" />
 
+For a live demo go to www.charlesdurfee.com/livedemo/sentiment
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

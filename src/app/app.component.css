@@ -2,3 +2,15 @@ h1{
   margin-top: 80px;
   text-align: center;
 }
+
+#neutralWords {
+  background-color: rgb(247,247,247);
+}
+
+#positiveWords {
+  background-color: rgb(222,255,221);
+}
+
+#negativeWords {
+  background-color: rgb(252,238,237);
+}

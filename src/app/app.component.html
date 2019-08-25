@@ -5,22 +5,26 @@
   <form>
     <div class="form-group">
       <label for="textInput">Enter text to analyze: </label>
-      <textarea class="form-control" id="textInput" [(ngModel)]="inputText" [value]="inputText" rows="3"></textarea>
+      <textarea class="form-control" (input)="analyze()" id="textInput" name="textInput" [(ngModel)]="inputText" [value]="inputText" rows="3"></textarea>
     </div>
     <div class="form-row">
       <div class="col">
         <label for="positiveWords">Positive Words:</label>
-        <textarea class="form-control" id="positiveWords" rows="3" readonly></textarea>
+        <textarea class="form-control" id="positiveWords" rows="3" [value]="posArry.join('')" readonly></textarea>
+      </div>
+      <div class="col">
+        <label for="neutralWords">Neutral Words:</label>
+        <textarea class="form-control" id="neutralWords" rows="3" [value]="neuArry.join('')" readonly></textarea>
       </div>
       <div class="col">
         <label for="negativeWords">Negative Words:</label>
-        <textarea class="form-control" id="negativeWords" rows="3" readonly></textarea>
+        <textarea class="form-control" id="negativeWords" rows="3" [value]="negArry.join('')" readonly></textarea>
       </div>
     </div>
     <div class="row justify-content-center" style="margin-top: 30px">
     <div class="form-group col-md-4 text-md-center" >
       <label for="overall">Overall Sentiment:</label>
-      <input type="text" class="form-control" id="overall" readonly>
+      <input type="text" [style.background-color]="overallColor" class="form-control text-md-center" id="overall" [value]="overall" readonly>
     </div>
     </div>
   </form>
